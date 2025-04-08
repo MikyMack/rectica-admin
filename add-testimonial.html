@@ -8,7 +8,7 @@
 <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-   
+
     <title>Suja Consultancy</title>
 
     <meta name="author" content="themesflat.com">
@@ -131,7 +131,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item has-children">
+                                    <li class="menu-item has-children active">
                                         <a href="javascript:void(0);" class="menu-item-button">
                                             <div class="icon"><i class="icon-layers"></i></div>
                                             <div class="text">Testimonail Management</div>
@@ -142,7 +142,7 @@
                                                     <div class="text">Testimonial list</div>
                                                 </a>
                                             </li>
-                                            <li class="sub-menu-item">
+                                            <li class="sub-menu-item active">
                                                 <a href="add-testimonial.html" class="">
                                                     <div class="text">Add Testimonial</div>
                                                 </a>
@@ -155,7 +155,7 @@
                                  
                               
                                
-                                    <li class="menu-item active">
+                                    <li class="menu-item">
                                         <a href="setting.html" class="">
                                             <div class="icon">
                                                 <svg width="24" height="22" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -197,7 +197,7 @@
                             
                             </div>
                             <div class="header-grid">
-                            
+                           
                                 <div class="header-item button-dark-light">
                                     <i class="icon-moon"></i>
                                 </div>
@@ -338,7 +338,7 @@
                                         <i class="icon-maximize"></i>
                                     </div>
                                 </div>
-                             
+                           
                                 <div class="popup-wrap user type-header">
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
@@ -416,7 +416,7 @@
                             <!-- main-content-wrap -->
                             <div class="main-content-wrap">
                                 <div class="flex items-center flex-wrap justify-between gap20 mb-30">
-                                    <h3>Setting</h3>
+                                    <h3>Add Testimonial</h3>
                                     <ul class="breadcrumbs flex items-center flex-wrap justify-start gap10">
                                         <li>
                                             <a href="index.html"><div class="text-tiny">Dashboard</div></a>
@@ -425,56 +425,49 @@
                                             <i class="icon-chevron-right"></i>
                                         </li>
                                         <li>
-                                            <div class="text-tiny">Setting</div>
+                                            <a href="#"><div class="text-tiny">Testimonial Management</div></a>
+                                        </li>
+                                        <li>
+                                            <i class="icon-chevron-right"></i>
+                                        </li>
+                                        <li>
+                                            <div class="text-tiny">Add Testimonial</div>
                                         </li>
                                     </ul>
                                 </div>
-                                <!-- setting -->
-                                <form class="form-setting form-style-2">
-                                    <div class="wg-box">
-                                        <div class="left">
-                                            <h5 class="mb-4">Admin Information</h5>
-                                            <div class="body-text">Setting Admin information</div>
+                                <!-- new-category -->
+                                <div class="wg-box">
+                                    <form class="form-new-product form-style-1" >
+                                        <fieldset class="name">
+                                            <div class="body-title"> Name <span class="tf-color-1">*</span></div>
+                                            <input class="flex-grow" type="text" placeholder="name" name="text" tabindex="0" value="" aria-required="true" required="">
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="body-title">Upload images <span class="tf-color-1">*</span></div>
+                                            <div class="upload-image flex-grow">
+                                                <div class="item up-load">
+                                                    <label class="uploadfile h250" for="myFile">
+                                                        <span class="icon">
+                                                            <i class="icon-upload-cloud"></i>
+                                                        </span>
+                                                        <span class="body-text">Drop your images here or select <span class="tf-color">click to browse</span></span>
+                                                        <img id="myFile-input" src="#" alt="">
+                                                        <input type="file" id="myFile" name="filename">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="category">
+                                            <div class="body-title">discription </div>
+                                            <input class="flex-grow" type="text" placeholder=" discription" name="text" tabindex="0" value="" aria-required="true" required="">
+                                        </fieldset>
+                                        <div class="bot">
+                                            <div></div>
+                                            <button class="tf-button w208" type="submit">Save</button>
                                         </div>
-                                        <div class="right flex-grow">
-                                            <div class="cols gap24">
-                                                <fieldset class="mb-24">
-                                                    <div class="body-title mb-10">First Name</div>
-                                                    <input class="flex-grow" type="text" placeholder="First Name" name="name" tabindex="0" value="Kristin" aria-required="true" required="">
-                                                </fieldset>
-                                                <fieldset class="mb-24">
-                                                    <div class="body-title mb-10">Last Name</div>
-                                                    <input class="flex-grow" type="text" placeholder="Last Name" name="name" tabindex="0" value="Watson" aria-required="true" required="">
-                                                </fieldset>
-                                            </div>
-                                            <div class="cols gap24">
-                                                <fieldset class="mb-24">
-                                                    <div class="body-title mb-10">Address</div>
-                                                    <input class="flex-grow" type="text" placeholder="Address" name="name" tabindex="0" value="52 Davis Street, Buffalo, New York" aria-required="true" required="">
-                                                </fieldset>
-                                                <fieldset class="mb-24">
-                                                    <div class="body-title mb-10">Contact</div>
-                                                    <input class="flex-grow" type="text" placeholder="Contact" name="name" tabindex="0" value="+1 548 562 1023" aria-required="true" required="">
-                                                </fieldset>
-                                            </div>
-                                            <div class="cols gap24">
-                                                <fieldset class="mb-24">
-                                                    <div class="body-title mb-10">Email</div>
-                                                    <input class="flex-grow" type="email" placeholder="Email" name="name" tabindex="0" value="kristin@ecomus.com" aria-required="true" required="">
-                                                </fieldset>
-                                                <fieldset class="mb-24">
-                                                    <div class="body-title mb-10">Role</div>
-                                                    <input class="flex-grow" type="text" placeholder="Address" name="name" tabindex="0" value="Sale Administrator" aria-required="true" required="">
-                                                </fieldset>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="cols gap10">
-                                        <button class="tf-button w380" type="submit">Update</button>
-                                    </div>
-                                </form>
-                                <!-- /setting -->
+                                    </form>
+                                </div>
+                                <!-- /new-category -->
                             </div>
                             <!-- /main-content-wrap -->
                         </div>
@@ -507,5 +500,5 @@
 </body>
 
 
-<!-- Mirrored from themesflat.co/html/ecomus/admin-ecomus/setting.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 06:50:40 GMT -->
+
 </html>

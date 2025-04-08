@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<!--<![endif]-->
+
 
 
 
@@ -95,7 +95,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item has-children">
+                                    <li class="menu-item has-children active">
                                         <a href="javascript:void(0);" class="menu-item-button">
                                             <div class="icon"><i class="icon-file-plus"></i></div>
                                             <div class="text">Job management</div>
@@ -106,7 +106,7 @@
                                                     <div class="text">Job List</div>
                                                 </a>
                                             </li>
-                                            <li class="sub-menu-item">
+                                            <li class="sub-menu-item active">
                                                 <a href="add-jobs.html" class="">
                                                     <div class="text">Add jobs</div>
                                                 </a>
@@ -155,7 +155,7 @@
                                  
                               
                                
-                                    <li class="menu-item active">
+                                    <li class="menu-item">
                                         <a href="setting.html" class="">
                                             <div class="icon">
                                                 <svg width="24" height="22" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -194,10 +194,18 @@
                                 <div class="button-show-hide">
                                     <i class="icon-chevron-left"></i>
                                 </div>
-                            
+                                <form class="form-search flex-grow">
+                                    <fieldset class="name">
+                                        <input type="text" placeholder="Search" class="show-search" name="name" tabindex="2" value="" aria-required="true" required="">
+                                    </fieldset>
+                                    <div class="button-submit">
+                                        <button class="" type="submit"><i class="icon-search"></i></button>
+                                    </div>
+                                 
+                                </form>
                             </div>
                             <div class="header-grid">
-                            
+                           
                                 <div class="header-item button-dark-light">
                                     <i class="icon-moon"></i>
                                 </div>
@@ -338,7 +346,7 @@
                                         <i class="icon-maximize"></i>
                                     </div>
                                 </div>
-                             
+                           
                                 <div class="popup-wrap user type-header">
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
@@ -416,7 +424,7 @@
                             <!-- main-content-wrap -->
                             <div class="main-content-wrap">
                                 <div class="flex items-center flex-wrap justify-between gap20 mb-30">
-                                    <h3>Setting</h3>
+                                    <h3>Add Product</h3>
                                     <ul class="breadcrumbs flex items-center flex-wrap justify-start gap10">
                                         <li>
                                             <a href="index.html"><div class="text-tiny">Dashboard</div></a>
@@ -425,56 +433,147 @@
                                             <i class="icon-chevron-right"></i>
                                         </li>
                                         <li>
-                                            <div class="text-tiny">Setting</div>
+                                            <a href="#"><div class="text-tiny">Product</div></a>
+                                        </li>
+                                        <li>
+                                            <i class="icon-chevron-right"></i>
+                                        </li>
+                                        <li>
+                                            <div class="text-tiny">Add Product</div>
                                         </li>
                                     </ul>
                                 </div>
-                                <!-- setting -->
-                                <form class="form-setting form-style-2">
-                                    <div class="wg-box">
-                                        <div class="left">
-                                            <h5 class="mb-4">Admin Information</h5>
-                                            <div class="body-text">Setting Admin information</div>
+                                <!-- form-add-product -->
+                                <form class="form-add-product" >
+                                    <div class="wg-box mb-30">
+                                        <fieldset>
+                                            <div class="body-title mb-10">Upload images</div>
+                                            <div class="upload-image mb-16">
+                                                <div class="up-load">
+                                                    <label class="uploadfile" for="myFile">
+                                                        <span class="icon">
+                                                            <i class="icon-upload-cloud"></i>
+                                                        </span>
+                                                        <div class="text-tiny">Drop your images here or select <span class="text-secondary">click to browse</span></div>
+                                                        <input type="file" id="myFile" name="filename">
+                                                        <img src="#" id="myFile-input" alt="">
+                                                    </label>
+                                                </div>
+                                           
+                                            </div>
+                                            <div class="body-text">You need to add at least 2 images. Pay attention to the quality of the pictures you add, comply with the background color standards. Pictures must be in certain dimensions. Notice that the product shows all the details</div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="wg-box mb-30">
+                                        <fieldset class="name">
+                                            <div class="body-title mb-10">Job title <span class="tf-color-1">*</span></div>
+                                            <input class="mb-10" type="text" placeholder="Enter title" name="text" tabindex="0" value="" aria-required="true" required="">
+                                            <div class="text-tiny text-surface-2">Do not exceed 20 characters when entering the product name.</div>
+                                        </fieldset>
+                                    
+                                        <fieldset class="category">
+                                            <div class="body-title mb-10">Company <span class="tf-color-1">*</span></div>
+                                            <input class="" type="text" placeholder=" Enter company name" name="text" tabindex="0" value="" aria-required="true" required="">
+                                        </fieldset>
+                                        <fieldset class="category">
+                                            <div class="body-title mb-10">Category <span class="tf-color-1">*</span></div>
+                                            <input class="" type="text" placeholder="Enter category" name="text" tabindex="0" value="" aria-required="true" required="">
+                                        </fieldset>
+                                        <fieldset class="category">
+                                            <div class="body-title mb-10">Sub Category <span class="tf-color-1">*</span></div>
+                                            <input class="" type="text" placeholder="Enter sub category" name="text" tabindex="0" value="" aria-required="true" required="">
+                                        </fieldset>
+                                        <fieldset class="category">
+                                            <div class="body-title mb-10">Skills <span class="tf-color-1">*</span></div>
+                                            <input class="" type="text" placeholder="Enter skills" name="text" tabindex="0" value="" aria-required="true" required="">
+                                        </fieldset>
+                                        <fieldset class="category">
+                                            <div class="body-title mb-10">Loaction <span class="tf-color-1">*</span></div>
+                                            <input class="" type="text" placeholder="Enter location" name="text" tabindex="0" value="" aria-required="true" required="">
+                                        </fieldset>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <input type="checkbox">
+                                            <div class="body-title ">Travel required <span class="tf-color-1">*</span></div>
                                         </div>
-                                        <div class="right flex-grow">
-                                            <div class="cols gap24">
-                                                <fieldset class="mb-24">
-                                                    <div class="body-title mb-10">First Name</div>
-                                                    <input class="flex-grow" type="text" placeholder="First Name" name="name" tabindex="0" value="Kristin" aria-required="true" required="">
-                                                </fieldset>
-                                                <fieldset class="mb-24">
-                                                    <div class="body-title mb-10">Last Name</div>
-                                                    <input class="flex-grow" type="text" placeholder="Last Name" name="name" tabindex="0" value="Watson" aria-required="true" required="">
-                                                </fieldset>
-                                            </div>
-                                            <div class="cols gap24">
-                                                <fieldset class="mb-24">
-                                                    <div class="body-title mb-10">Address</div>
-                                                    <input class="flex-grow" type="text" placeholder="Address" name="name" tabindex="0" value="52 Davis Street, Buffalo, New York" aria-required="true" required="">
-                                                </fieldset>
-                                                <fieldset class="mb-24">
-                                                    <div class="body-title mb-10">Contact</div>
-                                                    <input class="flex-grow" type="text" placeholder="Contact" name="name" tabindex="0" value="+1 548 562 1023" aria-required="true" required="">
-                                                </fieldset>
-                                            </div>
-                                            <div class="cols gap24">
-                                                <fieldset class="mb-24">
-                                                    <div class="body-title mb-10">Email</div>
-                                                    <input class="flex-grow" type="email" placeholder="Email" name="name" tabindex="0" value="kristin@ecomus.com" aria-required="true" required="">
-                                                </fieldset>
-                                                <fieldset class="mb-24">
-                                                    <div class="body-title mb-10">Role</div>
-                                                    <input class="flex-grow" type="text" placeholder="Address" name="name" tabindex="0" value="Sale Administrator" aria-required="true" required="">
-                                                </fieldset>
-                                            </div>
+                                      
+                                        <div class="cols-lg gap22">
+                                            <fieldset class="price">
+                                                <div class="body-title mb-10">Eduction <span class="tf-color-1">*</span></div>
+                                                <input class="" type="number" placeholder="Enter education" name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="sale-price">
+                                                <div class="body-title mb-10">Experiance </div>
+                                                <input class="" type="number" placeholder="Enter experiance " name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="sale-price">
+                                                <div class="body-title mb-10">Salary </div>
+                                                <input class="" type="number" placeholder="Enter salary " name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                         
                                         </div>
+                                        <div class="cols-lg gap22">
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10">Languages <span class="tf-color-1">*</span></div>
+                                                <input class="" type="text" placeholder="Languages" name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10">Job type <span class="tf-color-1">*</span></div>
+                                                <select name="job-type" id="type">
+                                                    <option value="Full-Time">Full-Time</option>
+                                                    <option value="part-Time">part-Time</option>
+                                                    <option value="contract">Contract</option>
+                                                    <option value="internship">Internship</option>
+                                                </select>
+                                            </fieldset>
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10">Work mode <span class="tf-color-1">*</span></div>
+                                                <select name="job-type" id="type">
+                                                    <option value="On-site">On-site</option>
+                                                    <option value="Hybrid">Hybrid</option>
+                                                    <option value="Remote">Remote</option>
+                                                   
+                                                </select>
+                                            </fieldset>
+                                         
+                                       
+                                        </div>
+                                        <div class="cols-lg gap22">
+                                            <fieldset class="sku">
+                                                <div class="body-title mb-10">Total Opening</div>
+                                                <input class="" type="number" placeholder="Enter total opening" name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10">Proprity <span class="tf-color-1">*</span></div>
+                                                <select name="job-type" id="type">
+                                                    <option value="Low">Low</option>
+                                                    <option value="Medium">Medium</option>
+                                                    <option value="High">High</option>
+                                                    <option value="Urgent">Urgent</option>
+                                                   
+                                                </select>
+                                            </fieldset>
+                                            <fieldset class="schedule">
+                                                <div class="body-title mb-10">Posted Date</div>
+                                                <input type="date" name="date" >
+                                            </fieldset>
+                                            <fieldset class="schedule">
+                                                <div class="body-title mb-10">Last date</div>
+                                                <input type="date" name="date" >
+                                            </fieldset>
+                                        </div>
+                                        <fieldset class="description">
+                                            <div class="body-title mb-10">Description <span class="tf-color-1">*</span></div>
+                                            <textarea class="mb-10" name="description" placeholder="Short description about product" tabindex="0" aria-required="true" required=""></textarea>
+                                            <div class="text-tiny">Do not exceed 100 characters when entering the product name.</div>
+                                        </fieldset>
                                     </div>
                                 
                                     <div class="cols gap10">
-                                        <button class="tf-button w380" type="submit">Update</button>
+                                        <button class="tf-button w380" type="submit">Add product</button>
+                                        <a href="#" class="tf-button style-3 w380" type="submit">Cancel</a>
                                     </div>
                                 </form>
-                                <!-- /setting -->
+                                <!-- /form-add-product -->
                             </div>
                             <!-- /main-content-wrap -->
                         </div>
@@ -507,5 +606,5 @@
 </body>
 
 
-<!-- Mirrored from themesflat.co/html/ecomus/admin-ecomus/setting.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 06:50:40 GMT -->
+<!-- Mirrored from themesflat.co/html/ecomus/admin-ecomus/add-jobs.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 06:50:35 GMT -->
 </html>
