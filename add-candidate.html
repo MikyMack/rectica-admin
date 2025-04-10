@@ -8,7 +8,7 @@
 <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-
+   
     <title>Suja Consultancy</title>
 
     <meta name="author" content="themesflat.com">
@@ -95,7 +95,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item has-children">
+                                    <li class="menu-item has-children ">
                                         <a href="javascript:void(0);" class="menu-item-button">
                                             <div class="icon"><i class="icon-file-plus"></i></div>
                                             <div class="text">Job management</div>
@@ -106,7 +106,7 @@
                                                     <div class="text">Job List</div>
                                                 </a>
                                             </li>
-                                            <li class="sub-menu-item">
+                                            <li class="sub-menu-item ">
                                                 <a href="add-jobs.html" class="">
                                                     <div class="text">Add jobs</div>
                                                 </a>
@@ -131,13 +131,13 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item has-children active">
+                                    <li class="menu-item has-children">
                                         <a href="javascript:void(0);" class="menu-item-button">
                                             <div class="icon"><i class="icon-layers"></i></div>
                                             <div class="text">Testimonail Management</div>
                                         </a>
                                         <ul class="sub-menu">
-                                            <li class="sub-menu-item active">
+                                            <li class="sub-menu-item">
                                                 <a href="testimonials-list.html" class="">
                                                     <div class="text">Testimonial list</div>
                                                 </a>
@@ -149,7 +149,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item has-children ">
+                                    <li class="menu-item has-children active">
                                         <a href="javascript:void(0);" class="menu-item-button">
                                             <div class="icon"><i class="icon-layers"></i></div>
                                             <div class="text">Candidates Management</div>
@@ -160,14 +160,13 @@
                                                     <div class="text">Candidates list</div>
                                                 </a>
                                             </li>
-                                            <li class="sub-menu-item">
-                                                <a href="add-testimonial.html" class="">
+                                            <li class="sub-menu-item active">
+                                                <a href="add-candidate.html" class="">
                                                     <div class="text">Add Candidates</div>
                                                 </a>
                                             </li>
                                         </ul>
                                     </li>
-                                
                               
                               
                                  
@@ -212,7 +211,15 @@
                                 <div class="button-show-hide">
                                     <i class="icon-chevron-left"></i>
                                 </div>
-                            
+                                <form class="form-search flex-grow">
+                                    <fieldset class="name">
+                                        <input type="text" placeholder="Search" class="show-search" name="name" tabindex="2" value="" aria-required="true" required="">
+                                    </fieldset>
+                                    <div class="button-submit">
+                                        <button class="" type="submit"><i class="icon-search"></i></button>
+                                    </div>
+                                 
+                                </form>
                             </div>
                             <div class="header-grid">
                            
@@ -434,7 +441,7 @@
                             <!-- main-content-wrap -->
                             <div class="main-content-wrap">
                                 <div class="flex items-center flex-wrap justify-between gap20 mb-30">
-                                    <h3> Testimonials List</h3>
+                                    <h3>Add Candidate</h3>
                                     <ul class="breadcrumbs flex items-center flex-wrap justify-start gap10">
                                         <li>
                                             <a href="index.html"><div class="text-tiny">Dashboard</div></a>
@@ -443,300 +450,207 @@
                                             <i class="icon-chevron-right"></i>
                                         </li>
                                         <li>
-                                            <a href="#"><div class="text-tiny">Testimonial Management</div></a>
+                                            <a href="#"><div class="text-tiny">Candidate Management</div></a>
                                         </li>
                                         <li>
                                             <i class="icon-chevron-right"></i>
                                         </li>
                                         <li>
-                                            <div class="text-tiny">Testimonials List</div>
+                                            <div class="text-tiny">Add candidate</div>
                                         </li>
                                     </ul>
                                 </div>
-                                <!-- all-attribute -->
-                                <div class="wg-box">
-                                    <div class="flex items-center justify-between gap10 flex-wrap">
-                                        <div class="wg-filter flex-grow">
-                                            <div class="show">
-                                                <div class="text-tiny">Showing</div>
-                                                <div class="select">
-                                                    <select class="">
-                                                        <option>10</option>
-                                                        <option>20</option>
-                                                        <option>30</option>
-                                                    </select>
+                                <!-- form-add-product -->
+                                <form class="form-add-product" >
+                                    <div class="wg-box mb-30">
+                                        <fieldset>
+                                            <div class="body-title mb-10">Upload resume</div>
+                                            <div class="upload-image mb-16">
+                                                <div class="up-load">
+                                                    <label class="uploadfile" for="myFile">
+                                                        <span class="icon">
+                                                            <i class="icon-upload-cloud"></i>
+                                                        </span>
+                                                        <div class="text-tiny">Drop your images here or select <span class="text-secondary">click to browse</span></div>
+                                                        <input type="file" id="myFile" name="filename">
+                                                        <img src="#" id="myFile-input" alt="">
+                                                    </label>
                                                 </div>
-                                                <div class="text-tiny">entries</div>
+                                           
                                             </div>
-                                            <form class="form-search">
-                                                <fieldset class="name">
-                                                    <input type="text" placeholder="Search here..." class="" name="name" tabindex="2" value="" aria-required="true" required="">
-                                                </fieldset>
-                                                <div class="button-submit">
-                                                    <button class="" type="submit"><i class="icon-search"></i></button>
-                                                </div>
-                                            </form>
+                                            <div class="body-text">You need to add at least 1 images. Pay attention to the quality of the pictures you add, comply with the background color standards. Pictures must be in certain dimensions. Notice that the product shows all the details</div>
+                                        </fieldset>
+                                    </div>
+                                    
+                                    <div class="wg-box mb-30">
+                                        
+                                          
+                                        <div class="cols-lg gap22">
+                                            <fieldset class="price">
+                                                <div class="body-title mb-10">Full Name <span class="tf-color-1">*</span></div>
+                                                <input class="" type="text" placeholder="Enter Full Name" name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="sale-price">
+                                                <div class="body-title mb-10"> Email address </div>
+                                                <input class="" type="text" placeholder="Enter address " name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="sale-price">
+                                                <div class="body-title mb-10">Phone </div>
+                                                <input class="" type="number" placeholder="Enter Phone Number " name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                         
                                         </div>
-                                        <a class="tf-button style-1 w208" href="add-testimonial.html"><i class="icon-plus"></i>Add new</a>
+                                        <div class="cols-lg gap22">
+                                            <fieldset class="price">
+                                                <div class="body-title mb-10">Date Of Birth <span class="tf-color-1">*</span></div>
+                                                <input class="" type="date" placeholder="Enter Full Name" name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="sale-price">
+                                                <div class="body-title mb-10"> Street  </div>
+                                                <input class="" type="text" placeholder="Enter Street " name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="sale-price">
+                                                <div class="body-title mb-10">City </div>
+                                                <input class="" type="text" placeholder="Enter City  " name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                       
+                                         
+                                        </div>
+                                        <div class="cols-lg gap22">
+                                            <fieldset class="price">
+                                                <div class="body-title mb-10">State </div>
+                                                <input class="" type="text" placeholder="Enter State" name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="sale-price">
+                                                <div class="body-title mb-10"> Country  </div>
+                                                <input class="" type="text" placeholder="Enter Country " name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="sale-price">
+                                                <div class="body-title mb-10">Postal Code </div>
+                                                <input class="" type="number" placeholder="Enter Phone Number " name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                       
+                                         
+                                        </div>
+                                        <fieldset class="name">
+                                            <div class="body-title mb-10">Skills <span class="tf-color-1">*</span></div>
+                                            <input class="mb-10" type="text" placeholder="Enter Skills" name="text" tabindex="0" value="" aria-required="true" required="">
+                                           
+                                        </fieldset>
+                                        <div style="font-size: 15px; font-weight: 800; text-align: center;" class="">Work Experiance</div>
+                                        <div class="cols-lg gap22">
+                                            <fieldset class="price">
+                                                <div class="body-title mb-10">Position </div>
+                                                <input class="" type="text" placeholder="Enter Position" name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="sale-price">
+                                                <div class="body-title mb-10"> Company  </div>
+                                                <input class="" type="text" placeholder="Enter Company " name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="sale-price">
+                                                <div class="body-title mb-10">Start Date </div>
+                                                <input class="" type="date" placeholder="Enter Phne  " name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="sale-price">
+                                                <div class="body-title mb-10">End Date </div>
+                                                <input class="" type="date" placeholder="Enter Phone Number " name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                         
+                                        </div>
+                                        <fieldset class="description">
+                                            <div class="body-title mb-10">responsabilities <span class="tf-color-1">*</span></div>
+                                            <textarea class="mb-10" name="description" placeholder=" What kind of responsibilities did you have in your previous job?" tabindex="0" aria-required="true" required=""></textarea>
+                                            <div class="text-tiny">Do not exceed 100 characters when entering the product name.</div>
+                                        </fieldset>
+
+                                        <div style="font-size: 15px; font-weight: 800; text-align: center;" class="">Education</div>
+
+                                        <div class="cols-lg gap22">
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10">Education <span class="tf-color-1">*</span></div>
+                                                <input class="" type="text" placeholder="Enter Education" name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10">Duration <span class="tf-color-1">*</span></div>
+                                                <input type="text" placeholder="2017-2020">
+                                            
+                                            </fieldset>
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10">Institution<span class="tf-color-1">*</span></div>
+                                                <input type="text" placeholder="Enter Institution">
+                                            </fieldset>
+                                         
+                                       
+                                        </div>
+                                        <fieldset class="category">
+                                            <div class="body-title mb-10">Location <span class="tf-color-1">*</span></div>
+                                            <input class="" type="text" placeholder="Enter Location" name="text" tabindex="0" value="" aria-required="true" required="">
+                                        </fieldset>
+
+
+                                        <div style="font-size: 25px; font-weight: 800; text-align: center;" class="">International Details</div>
+                                        <fieldset class="category">
+                                            <div class="body-title mb-10">Passport Number <span class="tf-color-1">*</span></div>
+                                            <input class="" type="text" placeholder="Enter Passport Number" name="text" tabindex="0" value="" aria-required="true" required="">
+                                        </fieldset>
+                                        <div class="cols-lg gap22">
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10">Issuing Country <span class="tf-color-1">*</span></div>
+                                                <input class="" type="text" placeholder="Issuing Country" name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10">Issue Date <span class="tf-color-1">*</span></div>
+                                                <input type="date" placeholder="2017-2020">
+                                            
+                                            </fieldset>
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10">Expiry Date<span class="tf-color-1">*</span></div>
+                                                <input type="date" placeholder="Enter Expiry Date">
+                                            </fieldset>
+                                         
+                                       
+                                        </div>
+                                        <div style="font-size: 15px; font-weight: 800; text-align: center;" class="">Visa Details</div>
+                                        <fieldset class="category">
+                                            <div class="body-title mb-10">Visa Type <span class="tf-color-1">*</span></div>
+                                            <input class="" type="text" placeholder="Enter visa Type,eg:H-1B (Work Visa)" name="text" tabindex="0" value="" aria-required="true" required="">
+                                        </fieldset>
+                                        <div class="cols-lg gap22">
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10"> Country <span class="tf-color-1">*</span></div>
+                                                <input class="" type="text" placeholder="Enter Country" name="text" tabindex="0" value="" aria-required="true" required="">
+                                            </fieldset>
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10">Issue Date <span class="tf-color-1">*</span></div>
+                                                <input type="date" placeholder="2017-2020">
+                                            
+                                            </fieldset>
+                                            <fieldset class="choose-brand">
+                                                <div class="body-title mb-10">Expiry Date<span class="tf-color-1">*</span></div>
+                                                <input type="date" placeholder="Enter Expiry Date">
+                                            </fieldset>
+                                         
+                                       
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <input type="checkbox">
+                                            <div class="body-title ">Willing to Relocate<span class="tf-color-1">*</span></div>
+                                        </div>
+                                        <fieldset class="choose-brand">
+                                            <div class="body-title mb-10">Preferred Locations<span class="tf-color-1">*</span></div>
+                                            <input type="text" placeholder="Enter Preferred Locations">
+                                        </fieldset>
+                                     
+                                        
+                                     
                                     </div>
-                                    <div class="wg-table table-all-attribute">
-                                        <ul class="table-title flex gap20 mb-14">
-                                            <li>
-                                                <div class="body-title">Name</div>
-                                            </li>    
-                                            <li>
-                                                <div class="body-title">Discription</div>
-                                            </li>
-                                            <li>
-                                                <div class="body-title">Action</div>
-                                            </li>
-                                        </ul>
-                                        <ul class="flex flex-column">
-                                            <li class="attribute-item item-row flex items-center justify-between gap20">
-                                                <div class="name d-flex gap-3 align-items-center">
-                                                    <img class="testi-img"  src="images/poster/poster-2.jpg" alt="">
-                                                    <a href="add-attributes.html" class="body-title-2">jijo</a>
-                                                </div>
-                                                <div class="body-text truncate">Lorem ipsum dolor sit amet. Et deserunt nulla ducimus soluta aliquid porro eos doloribus laboriosam suscipit qui harum, exercitationem atque quasi pariatur a, cumque recusandae facilis ab?</div>
-                                                <div class="list-icon-function">
-                                                 
-                                                    <a href="add-testimonial.html"> <div class="item edit">
-                                                        <i class="icon-edit-3"></i>
-                                                      </div></a>
-                                                    <div class="item trash">
-                                                        <i class="icon-trash-2"></i>
-                                                    </div>
-                                                    <div class="item toggle">
-                                                        <label class="switch">
-                                                            <input type="checkbox">
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="attribute-item item-row flex items-center justify-between gap20">
-                                                <div class="name d-flex gap-3 align-items-center">
-                                                    <img class="testi-img"  src="images/poster/poster-2.jpg" alt="">
-                                                    <a href="add-attributes.html" class="body-title-2">jijo</a>
-                                                </div>
-                                                <div class="body-text truncate">Lorem ipsum dolor sit amet. Et deserunt nulla ducimus soluta aliquid porro eos doloribus laboriosam suscipit qui harum, exercitationem atque quasi pariatur a, cumque recusandae facilis ab?</div>
-                                                <div class="list-icon-function">
-                                                 
-                                                    <a href="add-testimonial.html"> <div class="item edit">
-                                                        <i class="icon-edit-3"></i>
-                                                      </div></a>
-                                                    <div class="item trash">
-                                                        <i class="icon-trash-2"></i>
-                                                    </div>
-                                                    <div class="item toggle">
-                                                        <label class="switch">
-                                                            <input type="checkbox">
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="attribute-item item-row flex items-center justify-between gap20">
-                                                <div class="name d-flex gap-3 align-items-center">
-                                                    <img class="testi-img"  src="images/poster/poster-2.jpg" alt="">
-                                                    <a href="add-attributes.html" class="body-title-2">jijo</a>
-                                                </div>
-                                                <div class="body-text truncate">Lorem ipsum dolor sit amet. Et deserunt nulla ducimus soluta aliquid porro eos doloribus laboriosam suscipit qui harum, exercitationem atque quasi pariatur a, cumque recusandae facilis ab?</div>
-                                                <div class="list-icon-function">
-                                                 
-                                                    <a href="add-testimonial.html"> <div class="item edit">
-                                                        <i class="icon-edit-3"></i>
-                                                      </div></a>
-                                                    <div class="item trash">
-                                                        <i class="icon-trash-2"></i>
-                                                    </div>
-                                                    <div class="item toggle">
-                                                        <label class="switch">
-                                                            <input type="checkbox">
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="attribute-item item-row flex items-center justify-between gap20">
-                                                <div class="name d-flex gap-3 align-items-center">
-                                                    <img class="testi-img"  src="images/poster/poster-2.jpg" alt="">
-                                                    <a href="add-attributes.html" class="body-title-2">jijo</a>
-                                                </div>
-                                                <div class="body-text truncate">Lorem ipsum dolor sit amet. Et deserunt nulla ducimus soluta aliquid porro eos doloribus laboriosam suscipit qui harum, exercitationem atque quasi pariatur a, cumque recusandae facilis ab?</div>
-                                                <div class="list-icon-function">
-                                                 
-                                                    <a href="add-testimonial.html"> <div class="item edit">
-                                                        <i class="icon-edit-3"></i>
-                                                      </div></a>
-                                                    <div class="item trash">
-                                                        <i class="icon-trash-2"></i>
-                                                    </div>
-                                                    <div class="item toggle">
-                                                        <label class="switch">
-                                                            <input type="checkbox">
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="attribute-item item-row flex items-center justify-between gap20">
-                                                <div class="name d-flex gap-3 align-items-center">
-                                                    <img class="testi-img"  src="images/poster/poster-2.jpg" alt="">
-                                                    <a href="add-attributes.html" class="body-title-2">jijo</a>
-                                                </div>
-                                                <div class="body-text truncate">Lorem ipsum dolor sit amet. Et deserunt nulla ducimus soluta aliquid porro eos doloribus laboriosam suscipit qui harum, exercitationem atque quasi pariatur a, cumque recusandae facilis ab?</div>
-                                                <div class="list-icon-function">
-                                                 
-                                                    <a href="add-testimonial.html"> <div class="item edit">
-                                                        <i class="icon-edit-3"></i>
-                                                      </div></a>
-                                                    <div class="item trash">
-                                                        <i class="icon-trash-2"></i>
-                                                    </div>
-                                                    <div class="item toggle">
-                                                        <label class="switch">
-                                                            <input type="checkbox">
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="attribute-item item-row flex items-center justify-between gap20">
-                                                <div class="name d-flex gap-3 align-items-center">
-                                                    <img class="testi-img"  src="images/poster/poster-2.jpg" alt="">
-                                                    <a href="add-attributes.html" class="body-title-2">jijo</a>
-                                                </div>
-                                                <div class="body-text truncate">Lorem ipsum dolor sit amet. Et deserunt nulla ducimus soluta aliquid porro eos doloribus laboriosam suscipit qui harum, exercitationem atque quasi pariatur a, cumque recusandae facilis ab?</div>
-                                                <div class="list-icon-function">
-                                                 
-                                                    <a href="add-testimonial.html"> <div class="item edit">
-                                                        <i class="icon-edit-3"></i>
-                                                      </div></a>
-                                                    <div class="item trash">
-                                                        <i class="icon-trash-2"></i>
-                                                    </div>
-                                                    <div class="item toggle">
-                                                        <label class="switch">
-                                                            <input type="checkbox">
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="attribute-item item-row flex items-center justify-between gap20">
-                                                <div class="name d-flex gap-3 align-items-center">
-                                                    <img class="testi-img"  src="images/poster/poster-2.jpg" alt="">
-                                                    <a href="add-attributes.html" class="body-title-2">jijo</a>
-                                                </div>
-                                                <div class="body-text truncate">Lorem ipsum dolor sit amet. Et deserunt nulla ducimus soluta aliquid porro eos doloribus laboriosam suscipit qui harum, exercitationem atque quasi pariatur a, cumque recusandae facilis ab?</div>
-                                                <div class="list-icon-function">
-                                                 
-                                                    <a href="add-testimonial.html"> <div class="item edit">
-                                                        <i class="icon-edit-3"></i>
-                                                      </div></a>
-                                                    <div class="item trash">
-                                                        <i class="icon-trash-2"></i>
-                                                    </div>
-                                                    <div class="item toggle">
-                                                        <label class="switch">
-                                                            <input type="checkbox">
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="attribute-item item-row flex items-center justify-between gap20">
-                                                <div class="name d-flex gap-3 align-items-center">
-                                                    <img class="testi-img"  src="images/poster/poster-2.jpg" alt="">
-                                                    <a href="add-attributes.html" class="body-title-2">jijo</a>
-                                                </div>
-                                                <div class="body-text truncate">Lorem ipsum dolor sit amet. Et deserunt nulla ducimus soluta aliquid porro eos doloribus laboriosam suscipit qui harum, exercitationem atque quasi pariatur a, cumque recusandae facilis ab?</div>
-                                                <div class="list-icon-function">
-                                                 
-                                                    <a href="add-testimonial.html"> <div class="item edit">
-                                                        <i class="icon-edit-3"></i>
-                                                      </div></a>
-                                                    <div class="item trash">
-                                                        <i class="icon-trash-2"></i>
-                                                    </div>
-                                                    <div class="item toggle">
-                                                        <label class="switch">
-                                                            <input type="checkbox">
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="attribute-item item-row flex items-center justify-between gap20">
-                                                <div class="name d-flex gap-3 align-items-center">
-                                                    <img class="testi-img"  src="images/poster/poster-2.jpg" alt="">
-                                                    <a href="add-attributes.html" class="body-title-2">jijo</a>
-                                                </div>
-                                                <div class="body-text truncate">Lorem ipsum dolor sit amet. Et deserunt nulla ducimus soluta aliquid porro eos doloribus laboriosam suscipit qui harum, exercitationem atque quasi pariatur a, cumque recusandae facilis ab?</div>
-                                                <div class="list-icon-function">
-                                                 
-                                                    <a href="add-testimonial.html"> <div class="item edit">
-                                                        <i class="icon-edit-3"></i>
-                                                      </div></a>
-                                                    <div class="item trash">
-                                                        <i class="icon-trash-2"></i>
-                                                    </div>
-                                                    <div class="item toggle">
-                                                        <label class="switch">
-                                                            <input type="checkbox">
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="attribute-item item-row flex items-center justify-between gap20">
-                                                <div class="name d-flex gap-3 align-items-center">
-                                                    <img class="testi-img"  src="images/poster/poster-2.jpg" alt="">
-                                                    <a href="add-attributes.html" class="body-title-2">jijo</a>
-                                                </div>
-                                                <div class="body-text truncate">Lorem ipsum dolor sit amet. Et deserunt nulla ducimus soluta aliquid porro eos doloribus laboriosam suscipit qui harum, exercitationem atque quasi pariatur a, cumque recusandae facilis ab?</div>
-                                                <div class="list-icon-function">
-                                                 
-                                                    <a href="add-testimonial.html"> <div class="item edit">
-                                                        <i class="icon-edit-3"></i>
-                                                      </div></a>
-                                                    <div class="item trash">
-                                                        <i class="icon-trash-2"></i>
-                                                    </div>
-                                                    <div class="item toggle">
-                                                        <label class="switch">
-                                                            <input type="checkbox">
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                
+                                    <div class="cols gap10">
+                                        <button class="tf-button w380" type="submit">Add Candidate</button>
+                                        <a href="#" class="tf-button style-3 w380" type="submit">Cancel</a>
                                     </div>
-                                    <div class="divider"></div>
-                                    <div class="flex items-center justify-between flex-wrap gap10">
-                                        <div class="text-tiny">Showing 10 entries</div>
-                                        <ul class="wg-pagination">
-                                            <li>
-                                                <a href="#"><i class="icon-chevron-left"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#">1</a>
-                                            </li>
-                                            <li class="active">
-                                                <a href="#">2</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">3</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="icon-chevron-right"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- /all-attribute -->
+                                </form>
+                                <!-- /form-add-product -->
                             </div>
                             <!-- /main-content-wrap -->
                         </div>
@@ -769,5 +683,5 @@
 </body>
 
 
-<!-- Mirrored from themesflat.co/html/ecomus/admin-ecomus/attributes.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 06:50:35 GMT -->
+<!-- Mirrored from themesflat.co/html/ecomus/admin-ecomus/add-jobs.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 06:50:35 GMT -->
 </html>
